@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action-controller>
+	<action>
+		<name>login</name>
+		<class>
+			<name>servlet.action.LoginAction</name>
+			<method>login</method>
+		</class>
+		<result>
+			<name>success</name>
+			<type>forward</type>
+			<value>login_success.jsp</value>
+		</result>
+		<result>
+			<name>fail</name>
+			<type>redirect</type>
+			<value>login_failed.jsp</value>
+		</result>
+	</action>
+	<action>
+		<name>register</name>
+		<class>
+			<name>servlet.action.RegisterAction</name>
+			<method>login</method>
+		</class>
+	</action>
+</action-controller>
